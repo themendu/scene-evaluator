@@ -1,0 +1,21 @@
+{
+  "run_id": "aa9f2712-bd22-47da-9b1e-bb2693df282a",
+  "dry_run": true,
+  "iteration": 2,
+  "prompt_version": "v1",
+  "model": "gpt-image-1.5",
+  "size": "1024x1024",
+  "quality": "medium",
+  "output_format": "png",
+  "image_path": "/Users/mendu/Desktop/scene evaluator/scene-evaluator/logs/generated_images/aa9f2712-bd22-47da-9b1e-bb2693df282a/iteration_02_candidate.png",
+  "prompt_path": "/Users/mendu/Desktop/scene evaluator/scene-evaluator/logs/generated_images/aa9f2712-bd22-47da-9b1e-bb2693df282a/iteration_02_candidate_prompt.txt",
+  "usage": {
+    "input_tokens": 120,
+    "cached_input_tokens": 0,
+    "output_tokens": 0
+  },
+  "estimated_cost_usd": 0.0,
+  "revised_prompt": null,
+  "ledger_after_call": null,
+  "created_at": "2026-05-03T11:08:12.300151+00:00"
+}

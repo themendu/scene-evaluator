@@ -1,0 +1,101 @@
+{
+  "active_profile": "budget_testing",
+  "budget": {
+    "max_usd": 5.0,
+    "warn_at_usd": 4.0,
+    "stop_when_exceeded": true
+  },
+  "gold_truth_image_generation": {
+    "provider": "openai",
+    "model": "gpt-image-1.5",
+    "size": "1024x1024",
+    "quality": "high",
+    "output_format": "png",
+    "cost_per_image_usd": 0.133
+  },
+  "candidate_image_generation": {
+    "provider": "openai",
+    "model": "gpt-image-1.5",
+    "size": "1024x1024",
+    "quality": "medium",
+    "output_format": "png",
+    "cost_per_image_usd": 0.067
+  },
+  "profiles": {
+    "budget_testing": {
+      "description": "Low-cost prompt and pipeline debugging profile.",
+      "generator": {
+        "provider": "openai",
+        "model": "gpt-5.4-nano",
+        "max_output_tokens": 1024,
+        "reasoning_format": "low"
+      },
+      "critic": {
+        "provider": "openai",
+        "model": "gpt-5.4-mini",
+        "max_output_tokens": 2048,
+        "reasoning_format": "low",
+        "image_detail": "low"
+      }
+    },
+    "quality_run": {
+      "description": "Higher-quality run after the loop works end to end.",
+      "generator": {
+        "provider": "openai",
+        "model": "gpt-5.4-mini",
+        "max_output_tokens": 1024,
+        "reasoning_format": "low"
+      },
+      "critic": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "max_output_tokens": 4096,
+        "reasoning_format": "medium",
+        "image_detail": "low"
+      }
+    },
+    "final_prompt_tuning": {
+      "description": "Use only after prompt templates are finalized.",
+      "generator": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "max_output_tokens": 2048,
+        "reasoning_format": "medium"
+      },
+      "critic": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "max_output_tokens": 4096,
+        "reasoning_format": "medium",
+        "image_detail": "low"
+      }
+    }
+  },
+  "pricing_per_1m_tokens": {
+    "gpt-5.4-nano": {
+      "input": 0.20,
+      "cached_input": 0.02,
+      "output": 1.25
+    },
+    "gpt-5.4-mini": {
+      "input": 0.75,
+      "cached_input": 0.075,
+      "output": 4.50
+    },
+    "gpt-5.4": {
+      "input": 2.50,
+      "cached_input": 0.25,
+      "output": 15.00
+    },
+    "gpt-5.5": {
+      "input": 5.00,
+      "cached_input": 0.50,
+      "output": 30.00
+    },
+    "gpt-image-1.5": {
+      "input": 5.00,
+      "cached_input": 1.25,
+      "output": 10.00
+    }
+  }
+}

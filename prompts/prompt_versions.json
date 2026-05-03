@@ -1,0 +1,12 @@
+{
+  "active": "v1",
+  "versions": {
+    "v1": {
+      "status": "draft",
+      "generator_initial": "prompts/v1/generator_initial.md",
+      "critic_continuity_supervisor": "prompts/v1/critic_continuity_supervisor.md",
+      "generator_revision": "prompts/v1/generator_revision.md",
+      "gold_truth_image_generation": "prompts/v1/gold_truth_image_generation.md"
+    }
+  }
+}
