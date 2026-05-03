@@ -97,6 +97,20 @@ iteration_00_candidate_prompt.txt
 iteration_00_candidate_metadata.json
 ```
 
+## Assumptions
+
+- The gold-truth image is generated from the scene and metadata using the best
+  configured image model, so it represents the best available reference this
+  system can create.
+- The gold-truth image can be biased by the gold-generation prompt, model style,
+  and model interpretation of the scene.
+- The critic treats the gold-truth image as the 100% reference point, so scores
+  measure similarity to that generated reference, not an objective ground truth.
+- A revised prompt is only useful when the pipeline also generates a fresh
+  candidate image from that revised prompt.
+- Run `cf4195c0-ec14-4977-8fe0-9b76f810977b` produced a decent result and can be
+  used as a reference run when comparing later experiments.
+
 ## Cost Tracking
 
 The repo keeps a cumulative cost ledger in:

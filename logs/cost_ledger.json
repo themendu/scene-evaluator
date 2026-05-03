@@ -1,15 +1,16 @@
 {
   "budget_usd": 5.0,
   "warn_at_usd": 4.0,
-  "total_estimated_cost_usd": 0.48307060000000007,
-  "total_input_tokens": 43105,
+  "total_estimated_cost_usd": 0.6145371000000001,
+  "total_input_tokens": 51046,
   "total_cached_input_tokens": 0,
-  "total_output_tokens": 16222,
-  "call_count": 21,
-  "runs": 2,
+  "total_output_tokens": 20957,
+  "call_count": 25,
+  "runs": 3,
   "completed_run_ids": [
     "4d8752f2-d47c-49c1-99df-aad13f12d181",
-    "2df32ef4-e1ab-4b33-9b13-d640e28593e5"
+    "2df32ef4-e1ab-4b33-9b13-d640e28593e5",
+    "cf4195c0-ec14-4977-8fe0-9b76f810977b"
   ],
   "calls": [
     {
@@ -340,7 +341,70 @@
         "output_format": "png"
       },
       "created_at": "2026-05-03T11:23:51.188017+00:00"
+    },
+    {
+      "run_id": "cf4195c0-ec14-4977-8fe0-9b76f810977b",
+      "profile": "quality_run",
+      "prompt_version": "v1",
+      "role": "critic",
+      "model": "gpt-5.4",
+      "usage": {
+        "input_tokens": 3478,
+        "cached_input_tokens": 0,
+        "output_tokens": 1349
+      },
+      "estimated_cost_usd": 0.02893,
+      "created_at": "2026-05-03T11:24:18.440846+00:00"
+    },
+    {
+      "run_id": "cf4195c0-ec14-4977-8fe0-9b76f810977b",
+      "profile": "quality_run",
+      "prompt_version": "v1",
+      "role": "generator_revision",
+      "model": "gpt-5.4-mini",
+      "usage": {
+        "input_tokens": 832,
+        "cached_input_tokens": 0,
+        "output_tokens": 215
+      },
+      "estimated_cost_usd": 0.0015915,
+      "created_at": "2026-05-03T11:24:22.659706+00:00"
+    },
+    {
+      "run_id": "cf4195c0-ec14-4977-8fe0-9b76f810977b",
+      "profile": "quality_run",
+      "prompt_version": "v1",
+      "role": "candidate_image_generation",
+      "model": "gpt-image-1.5",
+      "usage": {
+        "input_tokens": 127,
+        "cached_input_tokens": 0,
+        "output_tokens": 1492
+      },
+      "estimated_cost_usd": 0.067,
+      "metadata": {
+        "iteration": 1,
+        "image_path": "/Users/mendu/Desktop/scene evaluator/scene-evaluator/logs/generated_images/cf4195c0-ec14-4977-8fe0-9b76f810977b/iteration_01_candidate.png",
+        "size": "1024x1024",
+        "quality": "medium",
+        "output_format": "png"
+      },
+      "created_at": "2026-05-03T11:24:39.133993+00:00"
+    },
+    {
+      "run_id": "cf4195c0-ec14-4977-8fe0-9b76f810977b",
+      "profile": "quality_run",
+      "prompt_version": "v1",
+      "role": "critic",
+      "model": "gpt-5.4",
+      "usage": {
+        "input_tokens": 3504,
+        "cached_input_tokens": 0,
+        "output_tokens": 1679
+      },
+      "estimated_cost_usd": 0.033945,
+      "created_at": "2026-05-03T11:25:13.185994+00:00"
     }
   ],
-  "last_updated_at": "2026-05-03T11:23:51.188017+00:00"
+  "last_updated_at": "2026-05-03T11:25:13.188011+00:00"
 }
